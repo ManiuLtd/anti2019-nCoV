@@ -1,0 +1,19 @@
+#server.port=8080
+spring:
+  datasource:
+    amPhaeton:
+      jdbc-url: jdbc:mysql://127.0.0.1:10183/am_phaeton?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&allowMultiQueries=true
+      username: user_orcl
+      password: TKXCzunKDiaajSbJ
+      driver-class-name: com.mysql.jdbc.Driver
+      minimum-idle: 5
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: springHikariCP-amPhaeton
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+      read-only: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 250

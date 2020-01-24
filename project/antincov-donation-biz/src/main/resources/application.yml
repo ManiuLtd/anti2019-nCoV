@@ -1,0 +1,14 @@
+spring:
+  profiles:
+  active: dev
+server:
+  address: 127.0.0.1
+  port: 8080
+
+logging:
+  config: classpath:logback-boot.xml
+
+mybatis:
+  mapper-locations: classpath*:**/mapper/*Mapper.xml
+
+
