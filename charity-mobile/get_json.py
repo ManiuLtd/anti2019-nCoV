@@ -69,7 +69,7 @@ def trans_excel_to_json(data_dir):
     return data
 
 
-data_dir = u'物资募集/物资募捐统计.xlsx'
+data_dir = u'../doc/物资募集/物资募捐统计.xlsx'
 data = trans_excel_to_json(data_dir)
 with open('data.json', 'w') as json_name:
     json.dump(data, json_name, ensure_ascii=False, indent=4)
