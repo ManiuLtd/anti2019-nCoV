@@ -3,7 +3,7 @@
 spring:
   datasource:
     amPhaeton:
-      jdbc-url: jdbc:mysql://129.204.114.48/anti?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&allowMultiQueries=true
+      jdbc-url: jdbc:mysql://127.0.0.1/anti?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&allowMultiQueries=true
       username: root
       password: anti2019ncov
       driver-class-name: com.mysql.jdbc.Driver
