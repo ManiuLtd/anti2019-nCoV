@@ -14,10 +14,14 @@
       </div>
     </div>
     <!-- <van-list v-model="loading" finished = "finished" finished-text="没有更多了" @load="onLoad"> -->
-    <div v-for="content in list" :key="content.name">
+    <div
+      v-for="content in list"
+      :key="content.name"
+      style="box-shadow:0 5px 5px #ccc; margin-bottom:30px;"
+    >
       <!-- 医院名称 -->
       <van-cell
-        style="font-size: 18px; background-color: rgb(183, 136, 182)"
+        style="font-size: 18px; background-color: rgb(183, 136, 182);"
         :title="content.name"
       />
       <!-- 物资列表 -->
@@ -25,7 +29,7 @@
       <div
         v-for="item in content.items"
         :key="item.name"
-        style="border: 1px solid #000010; margin: 20px; font-size: 10px"
+        style="background:rgba(183, 136, 182, 0.5); margin: 20px; font-size: 10px"
       >
         <van-cell :title="item.name" :value="item.amount" />
       </div>
@@ -38,7 +42,7 @@
         <div>
           <van-button>提交捐赠信息</van-button>
         </div>
-        <div style="boder: 1px solid #000" @click="content.showInfo=false">
+        <div style="boder: 1px solid #000; padding: 10px;" @click="content.showInfo=false">
           <div>收起</div>
           <div>
             <van-icon name="arrow-up" />
@@ -46,7 +50,7 @@
         </div>
       </template>
       <template v-else>
-        <div style="boder: 1px solid #000" @click="content.showInfo=true">
+        <div style="boder: 1px solid #000; padding: 0 10px 10px;" @click="content.showInfo=true">
           <div>点击加载详情</div>
           <div>
             <van-icon name="arrow-down" />
@@ -216,5 +220,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   /* margin-top: 60px; */
+}
+
+.van-cell {
+  background: none;
 }
 </style>
