@@ -34,8 +34,8 @@ def trans_excel_to_json(data_dir):
         items = []
         for item_num in range(1000):
             cur_item = dict()
-            item_name = sheet.cell_value(cur_row + item_num, 3)
-            item_amount = sheet.cell_value(cur_row + item_num, 4)
+            item_name = sheet.cell_value(cur_row + item_num, 2)
+            item_amount = sheet.cell_value(cur_row + item_num, 3)
             if item_amount == u'-' or '':
                 item_amount = u'若干'
             cur_item['name'] = item_name
