@@ -73,121 +73,22 @@ export default {
   components: {},
   data() {
     return {
-      list: [
-        {
-          no: 1,
-          showInfo: false,
-          name: "武汉大学人民医院",
-          address: "湖北省武汉市武昌区解放路238号",
-          contat: "刘老师",
-          mobile: 13146228147,
-          items: [
-            {
-              name: "N95口罩",
-              amount: 10
-            },
-            {
-              name: "外科口罩",
-              amount: 100
-            },
-            {
-              name: "一次性口罩",
-              amount: 10202
-            }
-          ]
-        },
-        {
-          no: 1,
-          showInfo: false,
-          name: "武汉协和医院",
-          address: "湖北省武汉市武昌区解放路238号",
-          contat: "刘老师",
-          mobile: 13146228147,
-          items: [
-            {
-              name: "N95口罩",
-              amount: 10
-            },
-            {
-              name: "外科口罩",
-              amount: 100
-            },
-            {
-              name: "一次性口罩",
-              amount: 10202
-            }
-          ]
-        },
-        {
-          no: 1,
-          showInfo: false,
-          name: "湖北省第二医院",
-          address: "湖北省武汉市武昌区解放路238号",
-          contat: "刘老师",
-          mobile: 13146228147,
-          items: [
-            {
-              name: "N95口罩",
-              amount: 10
-            },
-            {
-              name: "外科口罩",
-              amount: 100
-            },
-            {
-              name: "一次性口罩",
-              amount: 10202
-            }
-          ]
-        },
-        {
-          no: 1,
-          showInfo: false,
-          name: "武汉大学任命医院",
-          address: "湖北省武汉市武昌区解放路238号",
-          contat: "刘老师",
-          mobile: 13146228147,
-          items: [
-            {
-              name: "N95口罩",
-              amount: 10
-            },
-            {
-              name: "外科口罩",
-              amount: 100
-            },
-            {
-              name: "一次性口罩",
-              amount: 10202
-            }
-          ]
-        },
-        {
-          no: 1,
-          showInfo: false,
-          name: "武汉大学任命医院",
-          address: "湖北省武汉市武昌区解放路238号",
-          contat: "刘老师",
-          mobile: 13146228147,
-          items: [
-            {
-              name: "N95口罩",
-              amount: 10
-            },
-            {
-              name: "外科口罩",
-              amount: 100
-            },
-            {
-              name: "一次性口罩",
-              amount: 10202
-            }
-          ]
-        }
-      ],
+      list: [],
       loading: false,
       finished: true
     };
+  },
+   created() {
+    // ajax
+    const vm = this
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", './data.json', true);
+    xhr.onload = function (){
+      if (this.status == 200) {
+        vm.list = JSON.parse(this.responseText)
+      }
+    }
+    xhr.send();
   },
   methods: {
     onLoad() {
