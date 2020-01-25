@@ -60,6 +60,7 @@
 
 <script>
 import Vue from "vue";
+import json from '../data.json';
 import { Col, Row, Cell, Button, Icon } from "vant";
 
 Vue.use(Col);
