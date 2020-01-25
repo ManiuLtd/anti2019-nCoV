@@ -1,16 +1,12 @@
 <template>
   <div id="app">
     <div
-      style="background-image: url(&#39;https://s2.ax1x.com/2020/01/24/1ZkT7F.md.jpg&#39;); padding-top:10px;"
+      style="background-image: url(&#39;https://s2.ax1x.com/2020/01/24/1ZkT7F.md.jpg&#39;); padding-top:10px;padding-bottom: 30px"
     >
       <div class="hero-inner">
         <h2 style="color: #fff">物资需求将在这里整合</h2>
         <p style="color: #fff">现在武汉的一线医院物资短缺，急需：N95 口罩、护目镜、防护服等。请大家有医用防护物资来源渠道请联系以下电话</p>
-        <van-button
-          style="margin-bottom: 12px; background-color: #000; boder: 1px solid #000;cursor: pointer"
-        >
-          <a href="https://3g.dxy.cn/newh5/view/pneumonia" style="color: #fff">返回疫情动态</a>
-        </van-button>
+        <a href="https://3g.dxy.cn/newh5/view/pneumonia" class="button" style="color: #fff">返回疫情动态</a>
       </div>
     </div>
     <!-- <van-list v-model="loading" finished = "finished" finished-text="没有更多了" @load="onLoad"> -->
@@ -35,7 +31,7 @@
         <van-cell title="医院地址" :value="content.address" />
         <van-cell title="联系人" :value="content.contat" />
         <van-cell title="联系电话" :value="content.mobile" />
-        <div>
+        <div class="hidden">
           <van-button>提交捐赠信息</van-button>
         </div>
         <div style="boder: 1px solid #000" @click="content.showInfo=false">
@@ -60,7 +56,6 @@
 
 <script>
 import Vue from "vue";
-import json from '../data.json';
 import { Col, Row, Cell, Button, Icon } from "vant";
 
 Vue.use(Col);
@@ -118,5 +113,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   /* margin-top: 60px; */
+}
+.hidden {
+  display: none;
+}
+.button {
+  /* margin-bottom: 12px;  */
+  background-color: #000; 
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 10px;
+  font-size: 14px;
 }
 </style>
