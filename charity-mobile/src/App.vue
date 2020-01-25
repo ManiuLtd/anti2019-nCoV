@@ -27,30 +27,13 @@
       </div>
 
       <!-- 点击加载详情 -->
-      <template v-if="content.showInfo">
-        <van-cell title="医院地址" :value="content.address" />
-        <van-cell title="联系人" :value="content.contat" />
-        <van-cell title="联系电话" :value="content.mobile" />
-        <div class="hidden">
-          <van-button>提交捐赠信息</van-button>
-        </div>
-        <div style="boder: 1px solid #000" @click="content.showInfo=false">
-          <div>收起</div>
-          <div>
-            <van-icon name="arrow-up" />
-          </div>
-        </div>
-      </template>
-      <template v-else>
-        <div style="boder: 1px solid #000" @click="content.showInfo=true">
-          <div>点击加载详情</div>
-          <div>
-            <van-icon name="arrow-down" />
-          </div>
-        </div>
-      </template>
+      <van-cell title="医院地址" :value="content.address" />
+      <van-cell title="联系人" :value="content.contat" />
+      <van-cell title="联系电话" :value="content.mobile" />
+      <div class="hidden">
+        <van-button>提交捐赠信息</van-button>
+      </div>
     </div>
-    <!-- </van-list> -->
   </div>
 </template>
 
