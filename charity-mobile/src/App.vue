@@ -74,10 +74,22 @@ export default {
   components: {},
   data() {
     return {
-      list: json,
+      list: [],
       loading: false,
       finished: true
     };
+  },
+   created() {
+    // ajax
+    const vm = this
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", './data.json', true);
+    xhr.onload = function (){
+      if (this.status == 200) {
+        vm.list = JSON.parse(this.responseText)
+      }
+    }
+    xhr.send();
   },
   methods: {
     onLoad() {
