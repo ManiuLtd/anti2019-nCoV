@@ -9,38 +9,42 @@
         <a href="https://3g.dxy.cn/newh5/view/pneumonia" class="button" style="color: #fff">返回疫情动态</a>
       </div>
     </div>
-    <!-- <van-list v-model="loading" finished = "finished" finished-text="没有更多了" @load="onLoad"> -->
+    <van-list
+      v-model="loading"
+      :finished="finished"
+      finished-text="没有更多了"
+      @load="onLoad"
+    >
     <div v-for="content in list" :key="content.name">
-      <!-- 医院名称 -->
       <van-cell
         style="font-size: 18px; background-color: rgb(183, 136, 182)"
         :title="content.name"
       />
-      <!-- 物资列表 -->
       <van-cell title="物资名称" value="物资数量"></van-cell>
-      <div
-        v-for="item in content.items"
-        :key="item.name"
-        style="border: 1px solid #000010; margin: 20px; font-size: 10px"
-      >
-        <van-cell :title="item.name" :value="item.amount" />
-      </div>
-
-      <!-- 点击加载详情 -->
-      <van-cell title="医院地址" :value="content.address" />
-      <van-cell title="联系人" :value="content.contat" />
-      <van-cell title="联系电话" :value="content.mobile" />
-      <div class="hidden">
-        <van-button>提交捐赠信息</van-button>
-      </div>
+        <div
+          v-for="item in content.items"
+          :key="item.name"
+          style="border: 1px solid #000010; margin: 20px; font-size: 10px"
+        >
+          <van-cell :title="item.name" :value="item.amount" />
+        </div>
+        <van-cell title="医院地址" :value="content.address" />
+        <van-cell title="联系人" :value="content.contat" />
+        <van-cell title="联系电话" :value="content.mobile" />
+        <div class="hidden">
+          <van-button>提交捐赠信息</van-button>
+        </div>
     </div>
+    </van-list>
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import { Col, Row, Cell, Button, Icon } from "vant";
+import { Col, Row, Cell, Button, Icon, List } from "vant";
 
+// Vue.use(PullRefresh).use(List);
+Vue.use(List);
 Vue.use(Col);
 Vue.use(Row);
 Vue.use(Cell);
@@ -53,8 +57,11 @@ export default {
   data() {
     return {
       list: [],
+      storeList: [],
+      rawData: [],
+      current: 1,
       loading: false,
-      finished: true
+      finished: false
     };
   },
    created() {
@@ -64,7 +71,15 @@ export default {
     xhr.open("GET", './data.json', true);
     xhr.onload = function (){
       if (this.status == 200) {
-        vm.list = JSON.parse(this.responseText)
+        let rawData = JSON.parse(this.responseText)
+        let result = [];
+        for(let i=0, len = rawData.length; i < len; i += 4){
+          result.push(rawData.slice(i, i + 4));
+        }
+        vm.rawData = rawData
+        vm.storeList = [...result]
+        // 先放4个
+        vm.list = result[0]
       }
     }
     xhr.send();
@@ -72,17 +87,16 @@ export default {
   methods: {
     onLoad() {
       // 异步更新数据
-      // setTimeout(() => {
-      //   // for (let i = 0; i < 10; i++) {
-      //   //   this.list.push(this.list.length + 1);
-      //   // }
-      //   // 加载状态结束
-      //   this.loading = false;
-      //   // 数据全部加载完成
-      //   if (this.list.length >= 40) {
-      //     this.finished = true;
-      //   }
-      // }, 500);
+      setTimeout(() => {
+        this.list.push(...this.storeList[this.current++])
+        // 加载状态结束
+        this.loading = false;
+        // 数据全部加载完成
+        if (this.list.length >= this.rawData.length) {
+          
+          this.finished = true;
+        }
+      }, 1000);
     }
   }
 };
