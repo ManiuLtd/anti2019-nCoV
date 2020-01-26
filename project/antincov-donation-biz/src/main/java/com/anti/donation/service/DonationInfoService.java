@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class DonationInfoService {
-    static final String fileName = "../data/data.json";
+    static final String fileName = "../jsondata/data.json";
     public String getDonationInfoList() {
         return FileReader.readFileContent(fileName);
     }
