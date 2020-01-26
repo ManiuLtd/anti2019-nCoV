@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 pid=0
 JVM_ARGS=" -Xms3g -Xmx3g -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseCMSInitiatingOccupancyOnly -Xloggc:log/gc.log -XX:+PrintGCDetails"
-PACKAGE_NAME="antincov-donation-biz.jar"
+PACKAGE_NAME="antincov-donation-biz*.jar"
 DEPLOY_DIR=`pwd`
 STDOUT_FILE=$DEPLOY_DIR/../stdout.log
 
