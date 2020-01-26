@@ -62,19 +62,18 @@ export default {
       current: 1,
       loading: false,
       finished: false
-    };
+    }
   },
-   created() {
-    // ajax
+   created () {
     const vm = this
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", './data.json', true);
-    xhr.onload = function (){
+    var xhr = new XMLHttpRequest()
+    xhr.open("GET", 'http://129.204.114.48:8081/donationList', true)
+    xhr.onload = function () {
       if (this.status == 200) {
         let rawData = JSON.parse(this.responseText)
-        let result = [];
+        let result = []
         for(let i=0, len = rawData.length; i < len; i += 4){
-          result.push(rawData.slice(i, i + 4));
+          result.push(rawData.slice(i, i + 4))
         }
         vm.rawData = rawData
         vm.storeList = [...result]
@@ -93,7 +92,6 @@ export default {
         this.loading = false;
         // 数据全部加载完成
         if (this.list.length >= this.rawData.length) {
-          
           this.finished = true;
         }
       }, 1000);
