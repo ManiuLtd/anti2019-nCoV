@@ -47,7 +47,7 @@
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.4.0</version>
+                <version>1.3.3</version>
                 <configuration>
                     <configurationFile>${project.basedir}/${mybatis.gen.config.file}</configurationFile>
                     <overwrite>true</overwrite>
