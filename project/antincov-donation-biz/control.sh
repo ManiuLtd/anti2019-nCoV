@@ -8,6 +8,3 @@ STDOUT_FILE=$DEPLOY_DIR/../stdout.log
 nohup java -jar ${JVM_ARGS} -Dspring.profiles.active=${PROFILE} ${PACKAGE_NAME}  > $STDOUT_FILE 2>&1 &
 
 
-
-
-

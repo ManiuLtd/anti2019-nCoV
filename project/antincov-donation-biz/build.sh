@@ -23,7 +23,10 @@ if [ $? -ne 0 ]; then
 fi
 rm -rf output
 mkdir output
-cp ./antincov-donation-biz/target/epower-aegis-bill-server.jar output/
+cp ./target/antincov-donation-biz*.jar output/
+rm -rf jsondata
+mkdir jsondata
+python3 get_json.py
 cp control.sh output/
 chmod 744 output/control.sh
 if [ $? -ne 0 ]; then
