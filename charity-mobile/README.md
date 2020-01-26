@@ -12,7 +12,12 @@ npm run serve
 
 ### Compiles and minifies for production
 ```
-npm run build
+//package ，output => ./dist
+npm/cnpm run build
+//If you do not install serve, you need to execute the following command
+npm/cnpm install serve -g
+//To start the service, you can also use the Tomcat container, just route the root directory to the. / dist / index.html file
+serve -s dist
 ```
 
 ### Lints and fixes files
