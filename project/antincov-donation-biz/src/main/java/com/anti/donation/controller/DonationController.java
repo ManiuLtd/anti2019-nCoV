@@ -1,5 +1,7 @@
 package com.anti.donation.controller;
 
+import com.anti.donation.service.DonationInfoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,37 +19,13 @@ import java.io.IOException;
  */
 @RestController
 public class DonationController {
-    static final String filename = "../json.data";
+
+    @Autowired
+    DonationInfoService donationInfoService;
 
     @GetMapping("donationList")
     String getDonationList() {
-        return readFileContent("json.data");
-    }
-
-    public static String readFileContent(String fileName) {
-        File file = new File(fileName);
-        BufferedReader reader = null;
-        StringBuffer sbf = new StringBuffer();
-        try {
-            reader = new BufferedReader(new FileReader(file));
-            String tempStr;
-            while ((tempStr = reader.readLine()) != null) {
-                sbf.append(tempStr);
-            }
-            reader.close();
-            return sbf.toString();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
-            }
-        }
-        return sbf.toString();
+        return donationInfoService.getDonationInfoList();
     }
 
 }

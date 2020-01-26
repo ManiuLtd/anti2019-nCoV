@@ -1,9 +1,10 @@
-spring:
-  profiles:
-  active: dev
 server:
   address: 127.0.0.1
   port: 8080
+
+spring:
+  profiles:
+    active: dev
 
 logging:
   config: classpath:logback-boot.xml

@@ -1,8 +1,7 @@
 ###for localhost
-#server.port=8080
 spring:
   datasource:
-    amPhaeton:
+    anti:
       jdbc-url: jdbc:mysql://127.0.0.1/anti?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&allowMultiQueries=true
       username: root
       password: didinewsun

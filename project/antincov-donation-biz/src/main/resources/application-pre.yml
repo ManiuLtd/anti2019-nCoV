@@ -1,10 +1,10 @@
 #server.port=8080
 spring:
   datasource:
-    amPhaeton:
-      jdbc-url: jdbc:mysql://127.0.0.1:10183/am_phaeton?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&allowMultiQueries=true
-      username: user_orcl
-      password: TKXCzunKDiaajSbJ
+    anti:
+      jdbc-url: jdbc:mysql://127.0.0.1/anti?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&allowMultiQueries=true
+      username: root
+      password: didinewsun
       driver-class-name: com.mysql.jdbc.Driver
       minimum-idle: 5
       maximum-pool-size: 20
