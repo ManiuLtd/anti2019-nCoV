@@ -6,12 +6,16 @@
 *.ipr
 *-pre.properties
 *-prod.properties
+*.log.zip
 
 ## Plugin-specific files:
 
 # IntelliJ
 /out/
 target/
+logs/
+node_modules/
+dist/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
