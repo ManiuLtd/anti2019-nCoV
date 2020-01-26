@@ -5,6 +5,31 @@ PACKAGE_NAME="antincov-donation-biz*.jar"
 DEPLOY_DIR=`pwd`
 STDOUT_FILE=$DEPLOY_DIR/../stdout.log
 
-nohup java -jar ${JVM_ARGS} -Dspring.profiles.active=${PROFILE} ${PACKAGE_NAME}  > $STDOUT_FILE 2>&1 &
+start(){
+   nohup java -jar ${JVM_ARGS} -Dspring.profiles.active=${PROFILE} ${PACKAGE_NAME}  > $STDOUT_FILE 2>&1 &
+}
 
+stop() {
+   
+}
 
+case $1 in
+    start)
+      start
+      ;;
+    stop)
+      stop
+      ;;
+    reload)
+      reload
+      ;;
+    restart)
+      reload
+      ;;
+    healthCheck)
+      healthCheck
+      ;;
+    *)
+     echo "arg start|stop|reload|healthCheck"
+esac
+exit $?
