@@ -67,7 +67,7 @@ export default {
    created () {
     const vm = this
     var xhr = new XMLHttpRequest()
-    xhr.open("GET", 'http://127.0.0.1:8081/donationList', true)
+    xhr.open("GET", 'http://39.105.77.161:8081/donationList', true)
     xhr.onload = function () {
       if (this.status == 200) {
         let rawData = JSON.parse(this.responseText)
