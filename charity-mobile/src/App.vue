@@ -70,6 +70,7 @@ export default {
     const url = window.location.href
     const location = url.slice(0, url.indexOf(":80"))
     xhr.open("GET", `${location}:8081/donationList`, true)
+    // xhr.open("GET", 'http://39.105.77.161:8081/donationList', true)
     xhr.onload = function () {
       if (this.status == 200) {
         let rawData = JSON.parse(this.responseText)
