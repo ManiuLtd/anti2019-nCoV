@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <configuration scan="true" scanPeriod="3 seconds">
+    <springProperty scope="contexts" name="root.log.level" source="root.log.level"/>
+    <springProperty scope="contexts" name="root.log.path" source="root.log.path"/>
     <!--设置日志输出为控制台-->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -9,16 +11,18 @@
     </appender>
     <!--设置日志输出为文件-->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/logFile.log</File>
-        <rollingPolicy  class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>logFile.%d{yyyy-MM-dd_HH-mm}.log.zip</FileNamePattern>
+        <File>${root.log.path}/antincov_donation_biz_default.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${root.log.path}/antincov_donation_biz_default.log.%d{yyyyMMdd}</fileNamePattern>
+            <maxHistory>120</maxHistory>
         </rollingPolicy>
-        <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>[%p][%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}][%c:%L] __anti||traceid=%X{traceid}||spanid=%X{spanid}||_msg=%msg%n</pattern>
-        </layout>
+        <encoder>
+            <pattern>[%p][%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}][%c:%L] _anti||traceid=%X{traceid}||spanid=%X{spanid}||_msg=%msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
     </appender>
     <root>
-        <level value="DEBUG"/>
+        <level value="${root.log.level}"/>
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="FILE"/>
     </root>

@@ -17,3 +17,8 @@ spring:
       read-only: false
       pool-prepared-statements: true
       max-open-prepared-statements: 250
+
+root:
+  log:
+    level: DEBUG
+    path: logs/
