@@ -1,5 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
+import axios from 'axios'
+const url = window.location.href
+const location = url.slice(0, url.indexOf(":80"))
+const baseURL =  `${location}:8081/donationList`
+
+// 测试
+// axios.defaults.baseURL="http://129.204.114.48:8081"
+// 正式
+axios.defaults.baseURL = baseURL
+Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
 

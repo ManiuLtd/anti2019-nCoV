@@ -5,43 +5,51 @@
     >
       <div class="hero-inner">
         <h2 style="color: #fff">物资需求将在这里整合</h2>
-        <p style="color: #fff">现在武汉的一线医院物资短缺，急需：N95 口罩、护目镜、防护服等。请大家有医用防护物资来源渠道请联系以下电话</p>
+        <p style="color: #fff">现在湖北省的一线医院物资短缺，急需：N95 口罩、护目镜、防护服等。请大家有医用防护物资来源渠道请联系以下电话</p>
         <a href="https://3g.dxy.cn/newh5/view/pneumonia" class="button" style="color: #fff">返回疫情动态</a>
       </div>
     </div>
-    <van-list
-      v-model="loading"
-      :finished="finished"
-      finished-text="没有更多了"
-      @load="onLoad"
-    >
-    <div v-for="content in list" :key="content.name">
-      <van-cell
-        style="font-size: 18px; background-color: rgb(183, 136, 182)"
-        :title="content.name"
-      />
-      <van-cell title="物资名称" value="物资数量"></van-cell>
-        <div
-          v-for="item in content.items"
-          :key="item.name"
-          style="border: 1px solid #000010; margin: 20px; font-size: 10px"
-        >
-          <van-cell :title="item.name" :value="item.amount" />
+    <van-tabs v-model="active">
+      <van-tab v-for="(city, index) in cityList" :title="city.cityName" :key="index"  :name="city.id">
+        <div style="height: 10px"></div>
+        <div v-if="rawData.length === 0" class="no-data">
+          志愿者努力收集数据中...
         </div>
-        <van-cell title="医院地址" :value="content.address" />
-        <van-cell title="联系人" :value="content.contat" />
-        <van-cell title="联系电话" :value="content.mobile" />
-        <div class="hidden">
-          <van-button>提交捐赠信息</van-button>
+        <van-list
+        v-else
+        v-model="loading"
+        :finished="finished"
+        finished-text="没有更多了"
+        @load="onLoad">
+        <div v-for="(content, i) in list" :key="content.name + i">
+          <van-cell
+            style="font-size: 18px; background-color: rgb(183, 136, 182)"
+            :title="content.name"
+          />
+          <van-cell title="物资名称" value="物资数量"></van-cell>
+            <div
+              v-for="(item, i) in content.items"
+              :key="item.name + i"
+              style="border: 1px solid #000010; margin: 20px; font-size: 10px"
+            >
+              <van-cell :title="item.name" :value="item.amount" />
+            </div>
+            <van-cell title="医院地址" :value="content.address" />
+            <van-cell title="联系人" :value="content.contat" />
+            <van-cell title="联系电话" :value="content.mobile" />
+            <div class="hidden">
+              <van-button>提交捐赠信息</van-button>
+            </div>
         </div>
-    </div>
-    </van-list>
+       </van-list>
+      </van-tab>
+    </van-tabs>
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import { Col, Row, Cell, Button, Icon, List } from "vant";
+import { Col, Row, Cell, Button, Icon, List, Tab, Tabs  } from "vant";
 
 // Vue.use(PullRefresh).use(List);
 Vue.use(List);
@@ -50,6 +58,8 @@ Vue.use(Row);
 Vue.use(Cell);
 Vue.use(Button);
 Vue.use(Icon);
+Vue.use(Tab);
+Vue.use(Tabs);
 
 export default {
   name: "app",
@@ -61,32 +71,51 @@ export default {
       rawData: [],
       current: 1,
       loading: false,
-      finished: false
+      finished: false,
+      cityList: [
+        // {id: "0", cityName: "武汉"},
+      ],
+      active: '420100'
     }
   },
-   created () {
-    const vm = this
-    var xhr = new XMLHttpRequest()
-    const url = window.location.href
-    const location = url.slice(0, url.indexOf(":80"))
-    xhr.open("GET", `${location}:8081/donationList`, true)
-    // xhr.open("GET", 'http://39.105.77.161:8081/donationList', true)
-    xhr.onload = function () {
-      if (this.status == 200) {
-        let rawData = JSON.parse(this.responseText)
-        let result = []
-        for(let i=0, len = rawData.length; i < len; i += 4){
-          result.push(rawData.slice(i, i + 4))
-        }
-        vm.rawData = rawData
-        vm.storeList = [...result]
-        // 先放4个
-        vm.list = result[0]
-      }
+  created () {
+    this.init()
+    // console.log(this.active)
+  },
+  watch: {
+    active: function (val) {
+      this.getdonationList(val)
     }
-    xhr.send();
   },
   methods: {
+    init() {
+      this.getCityList()
+      this.getdonationList(this.active)
+    },
+    getCityList () {
+       this.$http({
+        method: 'get',
+        url: '/cityList',
+      }).then(({data}) => {
+        this.cityList = data
+      })
+    },
+    getdonationList(id) {
+      this.$http({
+        method: 'get',
+        url: '/donationList',
+        params: { id: id }
+      }).then(({data}) => {
+        let result = []
+        for(let i=0, len = data.length; i < len; i += 4){
+          result.push(data.slice(i, i + 4))
+        }
+        this.rawData = data
+        this.storeList = [...result]
+        // 先放4个
+        this.list = result[0]
+      })
+    },
     onLoad() {
       // 异步更新数据
       setTimeout(() => {
@@ -110,17 +139,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  /* margin-top: 60px; */
 }
 .hidden {
   display: none;
 }
 .button {
-  /* margin-bottom: 12px;  */
   background-color: #000; 
   cursor: pointer;
   border: 1px solid #fff;
   padding: 10px;
   font-size: 14px;
+}
+.no-data {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999;
 }
 </style>
