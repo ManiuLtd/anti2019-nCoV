@@ -23,14 +23,14 @@ public class DonationInfoAdapter {
 
         String jsonresult = FileReader.readFileContent(fileName);
         List rawHospitalInfoList = JSONObject.parseObject(jsonresult, List.class);
-        List<HospitalInfo> HospitalInfoList = new LinkedList<>();
+        List<HospitalInfo> hospitalInfoList = new LinkedList<>();
         for(int i=0;i<rawHospitalInfoList.size();i++) {
-             HospitalInfo info =JSONObject.parseObject(JSONObject.toJSONString(HospitalInfoList.get(i)),HospitalInfo.class);
-            if(info.getAreaNo() == id) {
-                HospitalInfoList.add(info);
+             HospitalInfo info =JSONObject.parseObject(JSONObject.toJSONString(rawHospitalInfoList.get(i)),HospitalInfo.class);
+            if(0 == id || info.getAreaNo().equals(id)) {
+                hospitalInfoList.add(info);
             }
         }
 
-        return HospitalInfoList;
+        return hospitalInfoList;
     }
 }
