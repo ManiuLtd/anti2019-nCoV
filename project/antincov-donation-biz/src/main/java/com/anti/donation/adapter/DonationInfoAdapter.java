@@ -26,7 +26,7 @@ public class DonationInfoAdapter {
         List<HospitalInfo> hospitalInfoList = new LinkedList<>();
         for(int i=0;i<rawHospitalInfoList.size();i++) {
              HospitalInfo info =JSONObject.parseObject(JSONObject.toJSONString(rawHospitalInfoList.get(i)),HospitalInfo.class);
-            if(0 == id || info.getAreaNo().equals(id)) {
+            if( null == id || id.equals(0) || info.getAreaNo().equals(id)) {
                 hospitalInfoList.add(info);
             }
         }
