@@ -31,5 +31,7 @@ public class HospitalInfo {
 
     private String contact;
 
+    private String mobile;
+
     private List<Item> items;
 }

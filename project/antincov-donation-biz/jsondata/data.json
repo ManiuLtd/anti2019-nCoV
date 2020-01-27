@@ -5,7 +5,7 @@
         "showInfo": false,
         "name": "武汉大学人民医院",
         "address": "湖北省武汉市武昌区解放路238号 ",
-        "contat": "潘老师",
+        "contact": "潘老师",
         "mobile": "18672336467",
         "items": [
             {
@@ -48,7 +48,7 @@
         "showInfo": false,
         "name": "武汉协和医院",
         "address": "湖北省武汉市江岸区解放大道1277号华中科技大学同济医学院附属协和医院总务处",
-        "contat": "",
+        "contact": "",
         "mobile": "027-85726903（07:00-17:00）",
         "items": [
             {
@@ -95,7 +95,7 @@
         "showInfo": false,
         "name": "武汉大学中南医院",
         "address": "湖北省武汉市东湖路169号武汉大学中南医院",
-        "contat": "张老师",
+        "contact": "张老师",
         "mobile": "02767813010",
         "items": [
             {
@@ -138,7 +138,7 @@
         "showInfo": false,
         "name": "湖北省第三人民医院",
         "address": "湖北省武汉市硚口区中山大道26号湖北省第三人民医院（湖北省中山医院）医学装备部",
-        "contat": "",
+        "contact": "",
         "mobile": "027-83743013",
         "items": [
             {
@@ -185,7 +185,7 @@
         "showInfo": false,
         "name": "武汉科技大学附属天佑医院",
         "address": "湖北省武汉市武昌区丁字桥路涂家岭9号武汉科技大学附属天佑医院设备科",
-        "contat": "吴老师",
+        "contact": "吴老师",
         "mobile": "13971596535",
         "items": [
             {
@@ -232,7 +232,7 @@
         "showInfo": false,
         "name": "华润武钢总医院",
         "address": "青山区冶金大道209号华润武钢总医院",
-        "contat": "杨松",
+        "contact": "杨松",
         "mobile": "13701167157",
         "items": [
             {
@@ -275,7 +275,7 @@
         "showInfo": false,
         "name": "武汉同济医院",
         "address": "湖北省武汉市解放大道1095号同济医院后勤处器材科",
-        "contat": "陶老师",
+        "contact": "陶老师",
         "mobile": "15872435220",
         "items": [
             {
@@ -318,7 +318,7 @@
         "showInfo": false,
         "name": "武汉市武昌医院",
         "address": "湖北省武汉市武昌区杨园街116号武汉市武昌医院",
-        "contat": "24小时值班电话",
+        "contact": "24小时值班电话",
         "mobile": "18162533930",
         "items": [
             {
@@ -357,7 +357,7 @@
         "showInfo": false,
         "name": "武汉市汉阳医院",
         "address": "湖北省武汉市汉阳区墨水湖路53号汉阳医院设备科",
-        "contat": "王老师",
+        "contact": "王老师",
         "mobile": "18602703263",
         "items": [
             {
@@ -404,7 +404,7 @@
         "showInfo": false,
         "name": "湖北省中西医结合医院",
         "address": "湖北省武汉市江汉区菱角湖路11号湖北省中西医结合医院医学装备部",
-        "contat": "何先生",
+        "contact": "何先生",
         "mobile": "13377897186",
         "items": [
             {
@@ -459,7 +459,7 @@
         "showInfo": false,
         "name": "武汉市汉口医院",
         "address": "武汉市江岸区二七侧路7号武汉市汉口医院",
-        "contat": "常乐",
+        "contact": "常乐",
         "mobile": "15907115748",
         "items": [
             {
@@ -506,7 +506,7 @@
         "showInfo": false,
         "name": "武汉市中医医院",
         "address": "武汉市汉阳区四新大道303号武汉市中医医院(汉阳院区）",
-        "contat": "万老师",
+        "contact": "万老师",
         "mobile": "15071208120",
         "items": [
             {
@@ -545,7 +545,7 @@
         "showInfo": false,
         "name": "武汉市第三医院",
         "address": "武汉市武昌区彭刘杨路241号（首义院区）",
-        "contat": "黄老师",
+        "contact": "黄老师",
         "mobile": "027-68894855",
         "items": [
             {
@@ -576,7 +576,7 @@
         "showInfo": false,
         "name": "武汉市红十字会医院",
         "address": "湖北省武汉市江汉区香港路392号协和武汉红十字会医院耗材采购部",
-        "contat": "肖顺华",
+        "contact": "肖顺华",
         "mobile": "18062519388",
         "items": [
             {
@@ -615,7 +615,7 @@
         "showInfo": false,
         "name": "湖北省中医院",
         "address": "武昌区花园山4号湖北省中医院",
-        "contat": "唐莉",
+        "contact": "唐莉",
         "mobile": "18986072142",
         "items": [
             {
@@ -658,7 +658,7 @@
         "showInfo": false,
         "name": "武汉市第一医院",
         "address": "湖北省武汉市中山大道215号武汉市第一医院设备处",
-        "contat": "金老师",
+        "contact": "金老师",
         "mobile": "18171397656",
         "items": [
             {
@@ -697,7 +697,7 @@
         "showInfo": false,
         "name": "武汉市儿童医院",
         "address": "湖北省武汉市江岸区香港路100号武汉儿童医院",
-        "contat": "肖老师",
+        "contact": "肖老师",
         "mobile": "18502764706",
         "items": [
             {
@@ -740,7 +740,7 @@
         "showInfo": false,
         "name": "武汉市亚洲心脏病医院",
         "address": "湖北省武汉市江汉区京汉大道753号",
-        "contat": "",
+        "contact": "",
         "mobile": "400-888-4027（免长途费）",
         "items": [
             {
@@ -791,7 +791,7 @@
         "showInfo": false,
         "name": "武汉市第五医院",
         "address": "湖北省武汉市汉阳区显正街122号武汉市第五医院",
-        "contat": "",
+        "contact": "",
         "mobile": "027-84845881",
         "items": [
             {
@@ -834,7 +834,7 @@
         "showInfo": false,
         "name": "长江航运总医院",
         "address": "武汉市江岸区惠济路5号长江航运总医院医学装备处",
-        "contat": "王绍伟",
+        "contact": "王绍伟",
         "mobile": "13307102888",
         "items": [
             {
@@ -857,7 +857,7 @@
         "showInfo": false,
         "name": "武汉市黄陂区人民医院",
         "address": "湖北省武汉市黄陂区前川百秀街259号黄陂区人民医院设备科",
-        "contat": "",
+        "contact": "",
         "mobile": "027-85931736 61107879",
         "items": [
             {
@@ -912,7 +912,7 @@
         "showInfo": false,
         "name": "武汉市第四医院",
         "address": "湖北省武汉市硚口区汉正街473号武汉市第四医院",
-        "contat": "祁虹",
+        "contact": "祁虹",
         "mobile": "18171082725",
         "items": [
             {
@@ -963,7 +963,7 @@
         "showInfo": false,
         "name": "武汉市新洲区人民医院",
         "address": "湖北省武汉市新洲区新洲大街146号",
-        "contat": "器械科张科长",
+        "contact": "器械科张科长",
         "mobile": "18971498232",
         "items": [
             {
@@ -1002,7 +1002,7 @@
         "showInfo": false,
         "name": "武汉市金银潭医院",
         "address": "湖北省武汉市东西湖区银潭路1号",
-        "contat": "设备科邹涛",
+        "contact": "设备科邹涛",
         "mobile": "027-85509128",
         "items": [
             {
@@ -1049,7 +1049,7 @@
         "showInfo": false,
         "name": "武汉市江夏区第一人民医院/协和江南医院",
         "address": "湖北省武汉市江夏区文化大道1号",
-        "contat": "邓老师",
+        "contact": "邓老师",
         "mobile": "15926371976",
         "items": [
             {
@@ -1096,7 +1096,7 @@
         "showInfo": false,
         "name": "武汉钢铁（集团）公司第二职工医院",
         "address": "湖北省武汉市青山区白玉山青化路400号武汉钢铁（集团）公司第二职工医院设备科",
-        "contat": "刘兰",
+        "contact": "刘兰",
         "mobile": "13886035899",
         "items": [
             {
@@ -1139,7 +1139,7 @@
         "showInfo": false,
         "name": "湖北省第三人民医院阳逻院区",
         "address": "武汉市新洲区阳逻街潘庙大道特一号湖北省第三人民医院阳逻院区医学设备科",
-        "contat": "袁主任",
+        "contact": "袁主任",
         "mobile": "18971153616",
         "items": [
             {
@@ -1186,7 +1186,7 @@
         "showInfo": false,
         "name": "武汉市普仁医院",
         "address": "湖北省武汉市青山区建设四路本溪街一号武汉市普仁医院联合采购中心",
-        "contat": "",
+        "contact": "",
         "mobile": "027-86868999",
         "items": [
             {
@@ -1225,7 +1225,7 @@
         "showInfo": false,
         "name": "武汉市中心医院",
         "address": "湖北省武汉市江岸区胜利街26号武汉中心医院设备科",
-        "contat": "",
+        "contact": "",
         "mobile": "027-82211225",
         "items": [
             {
@@ -1272,7 +1272,7 @@
         "showInfo": false,
         "name": "武汉市第七医院",
         "address": "湖北省武汉市武昌区中南二路6号",
-        "contat": "设备科徐梦梅",
+        "contact": "设备科徐梦梅",
         "mobile": "13971078447",
         "items": [
             {
@@ -1319,7 +1319,7 @@
         "showInfo": false,
         "name": "湖北省荣军医院",
         "address": "湖北省武汉市洪山区卓豹路208号湖北省荣军医院医疗器械科",
-        "contat": "",
+        "contact": "",
         "mobile": "027-87805863",
         "items": [
             {
@@ -1362,7 +1362,7 @@
         "showInfo": false,
         "name": "武汉亚心总医院",
         "address": "武汉市经济技术开发区太子湖北路300号",
-        "contat": "",
+        "contact": "",
         "mobile": "027-84788999",
         "items": [
             {
@@ -1413,7 +1413,7 @@
         "showInfo": false,
         "name": "武汉科技大学医院",
         "address": "湖北省武汉市黄家湖西路2号",
-        "contat": "",
+        "contact": "",
         "mobile": "027-68893219",
         "items": [
             {
@@ -1464,7 +1464,7 @@
         "showInfo": false,
         "name": "湖北省肿瘤医院",
         "address": "湖北省武汉市洪山区卓刀泉南路116号湖北省肿瘤医院医务社工部",
-        "contat": "胡老师",
+        "contact": "胡老师",
         "mobile": "13971269012",
         "items": [
             {
@@ -1503,7 +1503,7 @@
         "showInfo": false,
         "name": "襄阳市中医医院",
         "address": "湖北省襄阳市樊城区长征路24号襄阳市中医医院医务处",
-        "contat": "",
+        "contact": "",
         "mobile": "17707254320.0",
         "items": [
             {
@@ -1542,7 +1542,7 @@
         "showInfo": false,
         "name": "应城市人民医院",
         "address": "应城市蒲阳大道69号应城市人民医院动力设备科",
-        "contat": "刘主任",
+        "contact": "刘主任",
         "mobile": "0712-3245536",
         "items": [
             {
@@ -1589,7 +1589,7 @@
         "showInfo": false,
         "name": "荆州市第一人民医院",
         "address": "荆州市沙市区航空路8号",
-        "contat": "龚辉",
+        "contact": "龚辉",
         "mobile": "18163139857",
         "items": [
             {
@@ -1644,7 +1644,7 @@
         "showInfo": false,
         "name": "荆州市中心医院",
         "address": "荆州市荆州区荆中路60号",
-        "contat": "熊伟",
+        "contact": "熊伟",
         "mobile": "18107167767",
         "items": [
             {
@@ -1687,7 +1687,7 @@
         "showInfo": false,
         "name": "黄冈市中医医院",
         "address": "湖北省黄冈市黄州区东门路19号",
-        "contat": "喻剑",
+        "contact": "喻剑",
         "mobile": "17371300596",
         "items": [
             {
@@ -1734,7 +1734,7 @@
         "showInfo": false,
         "name": "浠水县人民医院",
         "address": "湖北省浠水县清泉镇车站大道497号浠水县人民医院药械科",
-        "contat": "顿主任",
+        "contact": "顿主任",
         "mobile": "13617138862",
         "items": [
             {
@@ -1781,7 +1781,7 @@
         "showInfo": false,
         "name": "鄂州市中心医院",
         "address": "湖北省鄂州市文星路9号",
-        "contat": "江老师",
+        "contact": "江老师",
         "mobile": "13971986663",
         "items": [
             {
@@ -1824,7 +1824,7 @@
         "showInfo": false,
         "name": "汉川市人民医院",
         "address": "汉川市人民大道特一号汉川市人民医院设备科",
-        "contat": "凌主任",
+        "contact": "凌主任",
         "mobile": "13871922201",
         "items": [
             {
@@ -1871,7 +1871,7 @@
         "showInfo": false,
         "name": "湖北省天门市第一人民医院",
         "address": "湖北省天门市人民大道东1号 天门市第一人民医院 物资供应科",
-        "contat": "赵老师",
+        "contact": "赵老师",
         "mobile": "15871920991",
         "items": [
             {
@@ -1914,7 +1914,7 @@
         "showInfo": false,
         "name": "黄石市中心医院",
         "address": "湖北省黄石市黄石港区天津路141号黄石市中心医院后勤保障部",
-        "contat": "张老师",
+        "contact": "张老师",
         "mobile": "18186011616",
         "items": [
             {
@@ -1957,11 +1957,11 @@
     },
     {
         "no": 45,
-        "areaNo": 420800,
+        "areaNo": 421000,
         "showInfo": false,
         "name": "荆州市第二人民医院",
         "address": "荆州市沙市区江津路241号 荆州市第二人民医院器械科",
-        "contat": "谢忠义",
+        "contact": "谢忠义",
         "mobile": "18972162100",
         "items": [
             {
@@ -2016,7 +2016,7 @@
         "showInfo": false,
         "name": "湖北省孝感市中心医院",
         "address": "湖北省孝感市孝南区广场街6号孝感市中心医院医学装备科",
-        "contat": "杨老师",
+        "contact": "杨老师",
         "mobile": "13508690618",
         "items": [
             {
@@ -2067,7 +2067,7 @@
         "showInfo": false,
         "name": "襄阳市中心医院",
         "address": "湖北省襄阳市襄城区荆州街136号襄阳市中心医院设备处",
-        "contat": "黄老师",
+        "contact": "黄老师",
         "mobile": "13871636299",
         "items": [
             {
@@ -2110,7 +2110,7 @@
         "showInfo": false,
         "name": "孝感市第一人民医院",
         "address": "孝感市澴川路215号孝感市第一人民医院耗材科",
-        "contat": "冯主任",
+        "contact": "冯主任",
         "mobile": "13177259610",
         "items": [
             {
@@ -2157,7 +2157,7 @@
         "showInfo": false,
         "name": "黄石有色医院",
         "address": "湖北省黄石市下陆区新下陆街228号黄石有色医院保障部",
-        "contat": "蔡老师",
+        "contact": "蔡老师",
         "mobile": "13597721429",
         "items": [
             {
@@ -2208,7 +2208,7 @@
         "showInfo": false,
         "name": "阳新县人民医院",
         "address": "阳新县兴国镇儒学路81号设备科",
-        "contat": "周理河",
+        "contact": "周理河",
         "mobile": "13669042989",
         "items": [
             {
@@ -2255,7 +2255,7 @@
         "showInfo": false,
         "name": "咸宁市中心医院",
         "address": "湖北省咸宁市咸安区金桂路228号咸宁市中心医院",
-        "contat": "毛老师",
+        "contact": "毛老师",
         "mobile": "13997502572",
         "items": [
             {
@@ -2302,7 +2302,7 @@
         "showInfo": false,
         "name": "黄梅县人民医院",
         "address": "湖北省黄梅县五祖大道137号黄梅县人民医院药剂科",
-        "contat": "梅泽文",
+        "contact": "梅泽文",
         "mobile": "13972717079",
         "items": [
             {
@@ -2377,7 +2377,7 @@
         "showInfo": false,
         "name": "钟祥市人民医院",
         "address": "湖北省钟祥市南湖原种场祥云大道19号",
-        "contat": "",
+        "contact": "",
         "mobile": "0724-4223634",
         "items": [
             {
@@ -2412,7 +2412,7 @@
         "showInfo": false,
         "name": "湖北科技学院附属第二医院",
         "address": "湖北省咸宁市温泉城区马柏大道168号",
-        "contat": "毛老师",
+        "contact": "毛老师",
         "mobile": "13907240867",
         "items": [
             {
@@ -2435,7 +2435,7 @@
         "showInfo": false,
         "name": "襄阳市中西医结合医院",
         "address": "湖北省襄阳市高新区东风汽车大道16号 襄阳市中西医结合医院（市东风人民医院）",
-        "contat": "设备信息部 华超",
+        "contact": "设备信息部 华超",
         "mobile": "13871760329",
         "items": [
             {
@@ -2486,7 +2486,7 @@
         "showInfo": false,
         "name": "孝感市妇幼保健院",
         "address": "湖北省孝感市孝南区城站路73号孝感市妇幼保健院",
-        "contat": "胡主任 （设备科）",
+        "contact": "胡主任 （设备科）",
         "mobile": "13477716433",
         "items": [
             {
@@ -2541,7 +2541,7 @@
         "showInfo": false,
         "name": "武穴市第一人民医院",
         "address": "湖北省黄冈市武穴市刊江大道216号",
-        "contat": "杨胜文",
+        "contact": "杨胜文",
         "mobile": "13635869509",
         "items": [
             {
@@ -2584,7 +2584,7 @@
         "showInfo": false,
         "name": "黄冈市罗田县人民医院",
         "address": "湖北省黄冈市罗田县凤山镇王葆心大道7号",
-        "contat": "药剂科 江主任",
+        "contact": "药剂科 江主任",
         "mobile": "13636093228",
         "items": [
             {
@@ -2631,7 +2631,7 @@
         "showInfo": false,
         "name": "黄冈市蕲春县人民医院",
         "address": "湖北省黄冈市蕲春县漕河大道198号",
-        "contat": "公共卫生科 袁科长",
+        "contact": "公共卫生科 袁科长",
         "mobile": "13971729826",
         "items": [
             {
@@ -2678,7 +2678,7 @@
         "showInfo": false,
         "name": "咸宁市嘉鱼县人民医院",
         "address": "湖北省咸宁市嘉鱼县人民医院",
-        "contat": "设备科 许勇军主任",
+        "contact": "设备科 许勇军主任",
         "mobile": "13687145730",
         "items": [
             {
@@ -2725,7 +2725,7 @@
         "showInfo": false,
         "name": "黄冈红安县人民医院",
         "address": "黄冈市红安县城关镇陵园大道附50号 红安县人民医院",
-        "contat": "设备科周主任",
+        "contact": "设备科周主任",
         "mobile": "13636105950",
         "items": [
             {
@@ -2768,7 +2768,7 @@
         "showInfo": false,
         "name": "黄冈团风县人民医院",
         "address": "湖北省黄冈市团风县新城广场路15号",
-        "contat": "设备科 唐华波",
+        "contact": "设备科 唐华波",
         "mobile": "13476720207",
         "items": [
             {
@@ -2815,7 +2815,7 @@
         "showInfo": false,
         "name": "黄冈浠水县中医院",
         "address": "湖北省黄冈市浠水县清泉镇民政路140号",
-        "contat": "叶奇志",
+        "contact": "叶奇志",
         "mobile": "15327748777",
         "items": [
             {
@@ -2862,7 +2862,7 @@
         "showInfo": false,
         "name": "襄阳市南漳县人民医院",
         "address": "湖北省襄阳市南漳县城关镇水镜大道351号南漳县人民医院设备科",
-        "contat": "设备科王老师",
+        "contact": "设备科王老师",
         "mobile": "13797562996",
         "items": [
             {
@@ -2909,7 +2909,7 @@
         "showInfo": false,
         "name": "武汉市第六医院",
         "address": "湖北省武汉市江岸区香港路168号",
-        "contat": "周科长",
+        "contact": "周科长",
         "mobile": "13317170000",
         "items": [
             {
@@ -2960,7 +2960,7 @@
         "showInfo": false,
         "name": "湖北科技学院附属第二医院",
         "address": "湖北省咸宁市温泉城区马柏大道168号\n湖北科技学院附属第二医院物资保障组",
-        "contat": "毛老师",
+        "contact": "毛老师",
         "mobile": "13907240867",
         "items": [
             {
@@ -3003,7 +3003,7 @@
         "showInfo": false,
         "name": "武汉市黄陂区中医医院",
         "address": "湖北省武汉市黄陂区前川街板桥大道61号 武汉市黄陂区中医医院卫材科\n",
-        "contat": "张老师",
+        "contact": "张老师",
         "mobile": "15071162660",
         "items": [
             {
@@ -3046,7 +3046,7 @@
         "showInfo": false,
         "name": "仙桃市第一人民医院",
         "address": "湖北省仙桃市沔州大道中段29号仙桃市第一人民医院物资供应科",
-        "contat": "关键 防护用品",
+        "contact": "关键 防护用品",
         "mobile": "13707223566",
         "items": [
             {
@@ -3089,7 +3089,7 @@
         "showInfo": false,
         "name": "协和京山医院/京山市人民医院",
         "address": "湖北省京山市新市镇京源大道448号\n协和京山医院/京山市人民医院设备科",
-        "contat": "张老师",
+        "contact": "张老师",
         "mobile": "13972873417",
         "items": [
             {
@@ -3128,7 +3128,7 @@
         "showInfo": false,
         "name": "黄冈市英山县疾病预防控制中心、英山县人民医院",
         "address": "湖北省黄冈市英山经济开发区沿河西路166号",
-        "contat": "胡瑰 疾病预防控制中心",
+        "contact": "胡瑰 疾病预防控制中心",
         "mobile": "13707251089",
         "items": [
             {
@@ -3175,7 +3175,7 @@
         "showInfo": false,
         "name": "咸宁市第一人民医院",
         "address": "湖北省咸宁市咸安区怀德路196号",
-        "contat": "陈梅 设备仓库",
+        "contact": "陈梅 设备仓库",
         "mobile": "13476898168",
         "items": [
             {
@@ -3218,7 +3218,7 @@
         "showInfo": false,
         "name": "咸宁市中医医院",
         "address": "湖北省咸宁市温泉滨河西街17号 咸宁市中医医院",
-        "contat": "陈斌",
+        "contact": "陈斌",
         "mobile": "13997540442",
         "items": [
             {
@@ -3261,7 +3261,7 @@
         "showInfo": false,
         "name": "咸宁市肺结核病防治院",
         "address": "湖北省咸宁市温泉马柏大道166号咸宁市结核病防治院药械科",
-        "contat": "焦老师",
+        "contact": "焦老师",
         "mobile": "13972859226",
         "items": [
             {
@@ -3304,7 +3304,7 @@
         "showInfo": false,
         "name": "荆门市第一人民医院",
         "address": "湖北省荆门市象山大道168号",
-        "contat": "",
+        "contact": "",
         "mobile": "0724-8680787",
         "items": [
             {
@@ -3351,7 +3351,7 @@
         "showInfo": false,
         "name": "襄阳市第一人民医院",
         "address": "襄阳市樊城区解放路15号",
-        "contat": "",
+        "contact": "",
         "mobile": "0710-3420098",
         "items": [
             {
@@ -3422,7 +3422,7 @@
         "showInfo": false,
         "name": "荆州市中医医院",
         "address": "荆州市江津路172号湖北省荆州市中医医院设备科",
-        "contat": "王丽萍",
+        "contact": "王丽萍",
         "mobile": "18972168869",
         "items": [
             {
@@ -3485,7 +3485,7 @@
         "showInfo": false,
         "name": "云梦县中医院",
         "address": "湖北省云梦县城关镇曲阳路2号云梦县中医院设备科",
-        "contat": "",
+        "contact": "",
         "mobile": "0712-4339200",
         "items": [
             {
@@ -3528,7 +3528,7 @@
         "showInfo": false,
         "name": "湖北省云梦县人民医院",
         "address": "",
-        "contat": "",
+        "contact": "",
         "mobile": "",
         "items": [
             {
@@ -3575,7 +3575,7 @@
         "showInfo": false,
         "name": "监利县人民医院",
         "address": "荆州市监利县赵家村江城路80号",
-        "contat": "管医生",
+        "contact": "管医生",
         "mobile": "15171158643",
         "items": [
             {
@@ -3622,7 +3622,7 @@
         "showInfo": false,
         "name": "黄石爱康医院",
         "address": "-",
-        "contat": "朱老师",
+        "contact": "朱老师",
         "mobile": "13886481001",
         "items": [
             {
@@ -3669,7 +3669,7 @@
         "showInfo": false,
         "name": "湖北省黄冈市中心医院",
         "address": "湖北省黄冈市考棚街11号",
-        "contat": "杨女士",
+        "contact": "杨女士",
         "mobile": "18986552717",
         "items": [
             {
@@ -3720,7 +3720,7 @@
         "showInfo": false,
         "name": "宜昌市第一人民医院",
         "address": "湖北省宜昌市解放路2号 宜昌市第一人民医院 辅助楼3楼 捐赠物资库房",
-        "contat": "林老师",
+        "contact": "林老师",
         "mobile": "13997677556",
         "items": [
             {
@@ -3775,7 +3775,7 @@
         "showInfo": false,
         "name": "三峡大学附属仁和医院",
         "address": "湖北省宜昌市夷陵大道410号",
-        "contat": "申西华",
+        "contact": "申西华",
         "mobile": "13872631977",
         "items": [
             {
@@ -3834,7 +3834,7 @@
         "showInfo": false,
         "name": "宜昌市第三人民医院",
         "address": "湖北省宜昌市港窑路23号宜昌市第三人民医院总务科",
-        "contat": "李金桥",
+        "contact": "李金桥",
         "mobile": "13997661829",
         "items": [
             {
@@ -3881,7 +3881,7 @@
         "showInfo": false,
         "name": "宜昌市中心人民医院",
         "address": "湖北省宜昌市夷陵大道183号",
-        "contat": "刘老师",
+        "contact": "刘老师",
         "mobile": "15997603766",
         "items": [
             {
@@ -3932,7 +3932,7 @@
         "showInfo": false,
         "name": "湖北省宜昌市第二人民医院",
         "address": "湖北省宜昌市西陵一路21号 宜昌市第二人民医院新型冠状病毒感染肺炎疫情防控指挥部",
-        "contat": "左伟（设备科）",
+        "contact": "左伟（设备科）",
         "mobile": "13697282238",
         "items": [
             {
@@ -3987,7 +3987,7 @@
         "showInfo": false,
         "name": "蕲春县刘河镇卫生所",
         "address": "黄冈市刘河路65号",
-        "contat": "康奎雨",
+        "contact": "康奎雨",
         "mobile": "13872007503",
         "items": [
             {
@@ -4034,7 +4034,7 @@
         "showInfo": false,
         "name": "麻城市人民医院",
         "address": "湖北省黄冈市麻城市南正街贡家巷20号",
-        "contat": "采购中心",
+        "contact": "采购中心",
         "mobile": "0713-2967360",
         "items": [
             {
@@ -4081,7 +4081,7 @@
         "showInfo": false,
         "name": "湖北省随州市中心医院",
         "address": "湖北省随州市东城办事处文帝大道8号",
-        "contat": "胡必富（医院办公室）",
+        "contact": "胡必富（医院办公室）",
         "mobile": "13872868412",
         "items": [
             {
@@ -4132,7 +4132,7 @@
         "showInfo": false,
         "name": "孝昌县第一人民医院",
         "address": "湖北省孝昌县汇通大道孝昌县第一人民医院",
-        "contat": "医务科熊主任",
+        "contact": "医务科熊主任",
         "mobile": "13429939157",
         "items": [
             {
@@ -4179,7 +4179,7 @@
         "showInfo": false,
         "name": "来凤县中心医院",
         "address": "湖北省恩施土家苗族自治州来凤县中心医院",
-        "contat": "陈炫颖",
+        "contact": "陈炫颖",
         "mobile": "17607187131",
         "items": [
             {
