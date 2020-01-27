@@ -15,7 +15,7 @@ public enum CitiesEnum {
     XIANNING(421200L,"咸宁"),
     ENSHI(422800L,"恩施"),
     TIANMEN(429006L,"天门"),
-    XIANTAO(420600L,"仙桃");
+    XIANTAO(429004L,"仙桃");
     private Long id;
     private String name;
 
