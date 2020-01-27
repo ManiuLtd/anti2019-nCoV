@@ -12,15 +12,15 @@
     <van-tabs v-model="active">
       <van-tab v-for="(city, index) in cityList" :title="city.cityName" :key="index"  :name="city.id">
         <div style="height: 10px"></div>
-        <div v-if="rawData.length === 0" class="no-data">
+        <div v-if="list.length === 0" class="no-data">
           志愿者努力收集数据中...
         </div>
-        <van-list
+        <!-- <van-list
         v-else
         v-model="loading"
         :finished="finished"
         finished-text="没有更多了"
-        @load="onLoad">
+        @load="onLoad"> -->
         <div v-for="(content, i) in list" :key="content.name + i">
           <van-cell
             style="font-size: 18px; background-color: rgb(183, 136, 182)"
@@ -35,13 +35,14 @@
               <van-cell :title="item.name" :value="item.amount" />
             </div>
             <van-cell title="医院地址" :value="content.address" />
-            <van-cell title="联系人" :value="content.contat" />
-            <van-cell title="联系电话" :value="content.mobile" />
+            <van-cell title="联系人" :value="content.contact" />
+            <van-cell title="联系电话" :value="content.mobile" is-link :url="'tel:'+content.mobile"/>
+            <!-- <a href="tel:13764567708">移动WEB页面JS一键拨打号码咨询功能</a> -->
             <div class="hidden">
               <van-button>提交捐赠信息</van-button>
             </div>
         </div>
-       </van-list>
+       <!-- </van-list> -->
       </van-tab>
     </van-tabs>
   </div>
@@ -51,7 +52,6 @@
 import Vue from "vue";
 import { Col, Row, Cell, Button, Icon, List, Tab, Tabs  } from "vant";
 
-// Vue.use(PullRefresh).use(List);
 Vue.use(List);
 Vue.use(Col);
 Vue.use(Row);
@@ -72,15 +72,12 @@ export default {
       current: 1,
       loading: false,
       finished: false,
-      cityList: [
-        // {id: "0", cityName: "武汉"},
-      ],
+      cityList: [],
       active: '420100'
     }
   },
   created () {
     this.init()
-    // console.log(this.active)
   },
   watch: {
     active: function (val) {
@@ -106,27 +103,20 @@ export default {
         url: '/donationList',
         params: { id: id }
       }).then(({data}) => {
-        let result = []
-        for(let i=0, len = data.length; i < len; i += 4){
-          result.push(data.slice(i, i + 4))
-        }
-        this.rawData = data
-        this.storeList = [...result]
-        // 先放4个
-        this.list = result[0]
+        this.list = data
       })
     },
     onLoad() {
       // 异步更新数据
-      setTimeout(() => {
-        this.list.push(...this.storeList[this.current++])
-        // 加载状态结束
-        this.loading = false;
-        // 数据全部加载完成
-        if (this.list.length >= this.rawData.length) {
-          this.finished = true;
-        }
-      }, 1000);
+      // setTimeout(() => {
+      //   this.list.push(...this.storeList[this.current++])
+      //   // 加载状态结束
+      //   this.loading = false;
+      //   // 数据全部加载完成
+      //   if (this.list.length >= this.rawData.length) {
+      //     this.finished = true;
+      //   }
+      // }, 1000);
     }
   }
 };
