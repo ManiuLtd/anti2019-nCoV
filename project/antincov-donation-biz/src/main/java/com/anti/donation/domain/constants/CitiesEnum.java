@@ -6,7 +6,7 @@ public enum CitiesEnum {
     XIAOGAN(420900L,"孝感"),
     HUANGGANG(421100L,"黄冈"),
     EZHOU(420700L,"鄂州"),
-    HUANGSHI(420200L,"襄阳"),
+    HUANGSHI(420200L,"黄石"),
     SHIYAN(420300L,"十堰"),
     YICHANG(420500L,"宜昌"),
     JINGMEN(420800L,"荆门"),
