@@ -16,8 +16,8 @@ def trans_excel_to_json(data_dir):
     cur_row = 1
     while(cur_row < nrows):
         hosp_need = {}
-        hosp_num = int(sheet.cell_value(cur_row, 0))
-        hosp_area_num = int(sheet.cell_value(cur_row, 1))
+        hosp_num = sheet.cell_value(cur_row, 0)
+        hosp_area_num = sheet.cell_value(cur_row, 1)
         hosp_name = sheet.cell_value(cur_row, 2)
         hosp_address = sheet.cell_value(cur_row, 5)
         hosp_contant = str(sheet.cell_value(cur_row, 6))
@@ -44,7 +44,7 @@ def trans_excel_to_json(data_dir):
             cur_item['amount'] = item_amount
             items.append(cur_item)
             try:
-                if sheet.cell_value(cur_row + item_num + 1, 0) != '' or sheet.cell_value(cur_row + item_num + 1, 3) == '':
+                if sheet.cell_value(cur_row + item_num + 1, 0) != '' or sheet.cell_value(cur_row + item_num + 1, 2) == '':
                     break
             except:
                 break
@@ -71,9 +71,9 @@ def trans_excel_to_json(data_dir):
     return data
 
 
-data_dir = u'../../doc/物资募集/物资募捐统计.xlsx'
+data_dir = u'../doc/物资募集/物资募捐统计.xlsx'
 data = trans_excel_to_json(data_dir)
-with open('jsondata/data.json', 'w') as json_name:
+with open('public/data.json', 'w') as json_name:
     json.dump(data, json_name, ensure_ascii=False, indent=4)
 
 
