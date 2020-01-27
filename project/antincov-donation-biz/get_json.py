@@ -31,7 +31,7 @@ def trans_excel_to_json(data_dir):
         hosp_need['showInfo'] = False
         hosp_need['name'] = hosp_name
         hosp_need['address'] = hosp_address
-        hosp_need['contat'] = hosp_contantor
+        hosp_need['contact'] = hosp_contantor
         hosp_need['mobile'] = str(hosp_contant_phone)
         items = []
         for item_num in range(1000):
