@@ -16,16 +16,18 @@ def trans_excel_to_json(data_dir):
     cur_row = 1
     while(cur_row < nrows):
         hosp_need = {}
-        hosp_num = sheet.cell_value(cur_row, 0)
-        hosp_name = sheet.cell_value(cur_row, 1)
-        hosp_address = sheet.cell_value(cur_row, 4)
-        hosp_contant = str(sheet.cell_value(cur_row, 5))
+        hosp_num = int(sheet.cell_value(cur_row, 0))
+        hosp_area_num = int(sheet.cell_value(cur_row, 1))
+        hosp_name = sheet.cell_value(cur_row, 2)
+        hosp_address = sheet.cell_value(cur_row, 5)
+        hosp_contant = str(sheet.cell_value(cur_row, 6))
         try:
             hosp_contantor = hosp_contant.split('/')[1]
         except IndexError:
             hosp_contantor = ''
         hosp_contant_phone = hosp_contant.split('/')[0]
         hosp_need['no'] = hosp_num
+        hosp_need['areaNo'] = hosp_area_num
         hosp_need['showInfo'] = False
         hosp_need['name'] = hosp_name
         hosp_need['address'] = hosp_address
@@ -34,15 +36,15 @@ def trans_excel_to_json(data_dir):
         items = []
         for item_num in range(1000):
             cur_item = dict()
-            item_name = sheet.cell_value(cur_row + item_num, 2)
-            item_amount = sheet.cell_value(cur_row + item_num, 3)
+            item_name = sheet.cell_value(cur_row + item_num, 3)
+            item_amount = sheet.cell_value(cur_row + item_num, 4)
             if item_amount == u'-' or '':
                 item_amount = u'若干'
             cur_item['name'] = item_name
             cur_item['amount'] = item_amount
             items.append(cur_item)
             try:
-                if sheet.cell_value(cur_row + item_num + 1, 0) != '' or sheet.cell_value(cur_row + item_num + 1, 2) == '':
+                if sheet.cell_value(cur_row + item_num + 1, 0) != '' or sheet.cell_value(cur_row + item_num + 1, 3) == '':
                     break
             except:
                 break
